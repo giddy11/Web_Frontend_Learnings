@@ -1,0 +1,167 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family:"jost", sans-serif;
+}
+
+.header {
+    background-color: #37517E;
+    width: 100%;
+}
+
+.container {
+    width: 80%;
+    margin: auto; /*divide the space equally as the width reduces*/
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    /* gap: 20px; */
+    /* border: 1px solid red; */
+}
+
+/* descendant selectors */
+.header .container h1 {
+    color: white;
+    font-size: 30px;
+}
+
+.header .container .nav .nav-item {
+    margin-right: 30px;
+}
+
+.header .container .nav .nav-item a {
+    color: white;
+    text-decoration: none;
+}
+
+.header .container .nav .nav-item .active {
+    color: #47b2e4;
+}
+
+.header .container .nav .nav-item a.get-started {
+    background-color: #47b2e4;
+    padding: 10px 20px 10px 20px;
+    border-radius: 50px;
+    position: relative; /**/
+}
+
+.header .container .nav .nav-item a:hover {
+    color: #47b2e4;
+}
+
+.header .container .nav .nav-item a.get-started:hover {
+    background-color: orange;
+    left: 30px;
+}
+
+/* HERO SECTION */
+.hero {
+    width: 100%;
+    height: 92vh;
+    background-color: #37517E;
+}
+
+.hero .container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.hero .container .left {
+    width: 50%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.hero .container .left h1 {
+    color: white;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.hero .container .left p {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.hero .container .left .btn-container {
+    width: 100%;
+}
+
+.hero .container .left .btn-container a.get-started {
+    background-color: #47b2e4;
+    padding: 10px 20px 10px 20px;
+    border-radius: 50px;
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+
+.hero .container .left .btn-container a.watch-video {
+    padding: 10px 20px 10px 20px;
+    border-radius: 50px;
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+
+.hero .container .left .btn-container a.get-started:hover {
+    bottom:20px;
+}
+
+.hero .container .left .btn-container a.watch-video:hover {
+    top: 20px;
+}
+
+.hero .container .right {
+    width: 50%;
+    padding-bottom: 50px;
+}
+
+.hero .container .right img {
+    width: 100%;
+}
+
+
+/* .red {
+    border: 1px solid red;
+}
+
+.green {
+    border: 1px solid green;
+} */
+
+/* .yellow {
+    border: 1px solid yellow;
+} */
+
+
+/* the block value renders as a block element. */
+/* the inline values renders the element horizontally. */
+/* The inline block is rendered inline and displayed as block */
+/* Grid, table, inline flex, content for the display */
+
+/*
+Relative: can be moved to any part of the page without affecting the position of each sibling.
+
+Absolute: It is the opposite of the relative.
+
+When an element is displayed in flex direction for row, we have 2 properties
+Align items: takes care of the hor alignment
+justify content for a flex display takes care of the vertical spaces
+
+But for flex direction for column, it is the opposite
+Align items: takes care of the ver alignment
+justify content for a flex display takes care of the hor spaces
+
+************************HERO SECTION*************************************
+
+
+*/
