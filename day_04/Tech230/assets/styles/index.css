@@ -25,6 +25,10 @@
 }
 
 /* descendant selectors */
+.header .container a{
+    text-decoration: none;
+}
+
 .header .container h1 {
     color: white;
     font-size: 30px;
@@ -114,10 +118,12 @@
 
 .hero .container .left .btn-container a.get-started:hover {
     bottom:20px;
+    background-color: orange;
 }
 
 .hero .container .left .btn-container a.watch-video:hover {
     top: 20px;
+    color: orange;
 }
 
 .hero .container .right {
