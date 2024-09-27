@@ -66,7 +66,7 @@
 /* HERO SECTION */
 .hero {
     width: 100%;
-    height: 92vh;
+    /* height: 92vh; */
     background-color: #37517E;
 }
 
@@ -124,6 +124,7 @@
 .hero .container .left .btn-container a.watch-video:hover {
     top: 20px;
     color: orange;
+    border: 1px solid orange;
 }
 
 .hero .container .right {
@@ -142,9 +143,9 @@
 
 .green {
     border: 1px solid green;
-} */
+}
 
-/* .yellow {
+.yellow {
     border: 1px solid yellow;
 } */
 
@@ -168,6 +169,84 @@ Align items: takes care of the ver alignment
 justify content for a flex display takes care of the hor spaces
 
 ************************HERO SECTION*************************************
+
+
+*/
+
+
+
+/* FAQ SECTION */
+.faq {
+    width: 100%;
+    background-color: #f5f6f8;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.faq .left {
+    width: 50%;
+    /* display: flex;
+    flex-direction: column; */
+}
+
+.faq .left h1 {
+    color: #37517E;
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-weight: 200;
+
+}
+
+.faq .left h1 span {
+    font-weight: 600;
+}
+
+.faq .left p {
+    color: grey;
+    line-height: 20px;
+}
+
+.faq .left .container {
+    background-color: white;
+    width: 95%;
+    display: block;
+    padding: 20px;
+    /* margin-left: 0px; */
+    margin-top: 16px;
+    /* opacity: 0.1; */
+    box-shadow: rgb(0, 0, 0, 0.1) 0px 5px 25px 0px;
+    /* box-shadow: red 0px 5px 25px 0px; */
+}
+
+.faq .left .container h4 {
+    color: #47b2e4;
+    font-weight: 700;
+}
+
+.faq .left .container h4.active {
+    margin-bottom: 20px;
+}
+
+.faq .right {
+    width: 40%;
+}
+
+.faq .right img {
+    width: 100%;
+}
+
+
+/*
+Box shadow - 
+color
+horizontal offset
+vertical offset
+blur radius
+spread radius
+
+
+
 
 
 */
