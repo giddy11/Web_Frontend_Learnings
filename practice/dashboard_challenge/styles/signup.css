@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.signup .container {
+    display: flex;
+}
+
+/* Left section */
+.signup .container .left {
+    width: 30%;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.signup .container .left .logo {
+    font-size: 50px;
+    margin: 20px 0px 150px 20px;
+}
+
+.signup .container .left .down {
+    font-size: 110px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.signup .container .left .plans {
+    padding-left: 50px;
+}
+
+.signup .container .left .plans h2 {
+    padding-bottom: 40px;
+    font-size: 30px;
+    font-weight: 550;
+}
+
+.signup .container .left .plans .details {
+    display: flex;
+    gap: 15px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.signup .container .left .plans .details i {
+    color: #83bf6e;
+}
+
+
+
+
+
+
+/* Right section */
+.signup .container .right {
+    width: 70%;
+    height: 100vh;
+}
+
+
+
+
+.red {
+    border: 2px solid red;
+}
+
+.green {
+    border: 2px solid green;
+}
+
+.black {
+    border: 1px solid black;
+}
+
+
+.yellow {
+    border: 2px solid yellow;
+}
