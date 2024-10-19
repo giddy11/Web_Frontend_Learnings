@@ -1,7 +1,12 @@
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
 }
+
+body {
+    overflow: hidden;
+}
+
 
 .signup .container {
     display: flex;
@@ -47,11 +52,7 @@
 }
 
 
-
-
-
-
-/* Right section */
+/* Right Section */
 .signup .container .right {
     width: 70%;
     height: 100vh;
