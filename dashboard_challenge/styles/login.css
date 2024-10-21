@@ -1,0 +1,169 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    overflow: hidden;
+}
+
+.login .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login .container form {
+    width: 300px;
+    margin: auto;
+}
+
+.login .container form .logo {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.login .container form h1 {
+    font-size: 40px;
+}
+
+.login .container form h4 {
+    margin-bottom: 15px;
+}
+
+.login .container .open-account {
+    margin: 20px 0px;
+}
+
+.login .container form .icons {
+    display: flex;
+    gap: 15px;
+    height: 42px;
+    margin-bottom: 30px;
+    margin-left: 5px;
+}
+
+.login .container form .icons button {
+    display: flex;
+    align-items: center;
+    padding-right: 10px;
+    border-radius: 5px;
+    border: 1px solid #dee1e6;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.login .container form .icons button:hover {
+    background-color: #ced4dd;
+}
+
+.login .container form .icons button img {
+    width: 60%;
+    height: 60%;
+}
+
+.login .container form .icons .apple-btn {
+    gap: 7px;
+    padding: 0px 12px;
+}
+
+.login .container .icons .apple-btn i {
+    font-size: 28px;
+}
+
+.login .container form .line::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #dee1e6;
+    margin: 30px auto;
+}
+
+.login .container form .email-input {
+    display: flex;
+    padding: 15px 10px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    background-color: #e5ebf3;
+    color: #606a79;
+    align-items: center;
+}
+
+.login .container form .email-input .email {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+.login .container form .email-input .email i {
+    font-size: 20px;
+}
+
+.login .container form .email-input .email input {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    width: 100%;
+}
+
+.login .container form .email-input:hover {
+    background-color: #d3ddea;
+}
+
+.login .container form .email-input:focus-within {
+    border: 1px solid #aebbcd;
+}
+
+.login .container form .continue-btn {
+    width: 100%;
+    padding: 15px 0px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    background-color: #2a85ff;
+    margin-bottom: 20px;
+}
+
+.login .container form .continue-btn:hover {
+    cursor: pointer;
+    background-color: #2b7ae1;
+}
+
+.login .container form .policy {
+    color: #9ea2a8;
+    font-size: 13px;
+    padding-bottom: 20px;
+}
+
+.login .container form span {
+    color: #9ea2a8;
+    display: flex;
+    gap: 15px;
+}
+
+.login .container form span a {
+    text-decoration: none;
+}
+
+
+
+
+.red {
+    border: 2px solid red;
+}
+
+.green {
+    border: 2px solid green;
+}
+
+.black {
+    border: 1px solid black;
+}
+
+
+.yellow {
+    border: 2px solid yellow;
+}
