@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: white;
+    overflow: hidden;
+}
+
+.dashboard .header {
+    height: 10vh;
+    display: flex;
+}
+
+.dashboard .header .logo {
+    width: 20%;
+    display: flex;
+    align-items: center;
+}
+
+.dashboard .header .right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+
+.dashboard .sidebar-main {
+    display: flex;
+    height: 90vh;
+}
+
+.dashboard .sidebar-main .sidebar {
+    width: 20%;
+}
+
+.dashboard .sidebar-main .main-body {
+    width: 80%;
+}
+
+
+
+
+.red {
+    /* border: 2px solid red; */
+    background-color: red;
+}
+
+.green {
+    /* border: 2px solid green; */
+    background-color: green;
+}
+
+.purple {
+    /* border: 1px solid black; */
+    background-color: purple;
+}
+
+
+.blue {
+    /* border: 2px solid blue; */
+    background-color: blue;
+}
