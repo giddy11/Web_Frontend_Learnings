@@ -227,7 +227,7 @@ body {
 }
 
 .dashboard .sidebar-main .sidebar .help .started .num {
-    background-color: #CABDFF;
+    background-color: #aebbcd;
     padding: 6px 8px;
     border-radius: 7px;
     font-weight: bold;
@@ -240,7 +240,7 @@ body {
     display: flex;
     border-radius: 30px;
     padding: 5px 5px;
-    background-color: #f4f4f4;
+    background-color: #aebbcd;
 }
 
 .dashboard .sidebar-main .sidebar .help .theme button {
@@ -261,7 +261,7 @@ body {
 
 .dashboard .sidebar-main .main-body {
     width: 80%;
-    background-color: #f4f4f4;
+    background-color: #d3ddea;
     position: relative;
     /* top: 890; */
     height: 100vh;
