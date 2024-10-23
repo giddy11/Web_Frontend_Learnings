@@ -5,19 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <link rel="stylesheet" href="../styles/dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/a11a819e40.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="dashboard">
         <div class="header red">
-            <div class="logo purple">Logo</div>
+            <div class="logo purplex">
+                <i class="fa-brands fa-google"></i>
+            </div>
             <div class="right">
-                <div class="search">Search</div>
-                <div class="links">
-                    <div class="message"></div>
-                    <div class="notification"></div>
-                    <div class="profile"></div>
-                    <a href="">Sign In</a>
-                    <a href="">Sign Up</a>
+                <div class="search blue">
+                    <label for="search"><i class="fa-solid fa-magnifying-glass"></i></label>
+                    <input type="text" id="search" placeholder="Search...">
+                </div>
+                <div class="links greenx">
+                    <button class="message btn">
+                        <i class="fa-solid fa-message"></i>
+                    </button>
+                    <button class="notification btn">
+                        <i class="fa-solid fa-bell"></i>
+                    </button>
+                    <button>
+                        <div class="img">
+                            <img src="https://media.istockphoto.com/id/1300512215/photo/headshot-portrait-of-smiling-ethnic-businessman-in-office.jpg?s=612x612&w=0&k=20&c=QjebAlXBgee05B3rcLDAtOaMtmdLjtZ5Yg9IJoiy-VY=" alt="">
+                        </div>
+                    </button>
+                    <a href="" class="signin redx">Sign In</a>
+                    <a href="" class="signup blue">Sign Up</a>
                 </div>
             </div>
         </div>
