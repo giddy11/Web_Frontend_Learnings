@@ -141,12 +141,74 @@ body {
     width: 20%;
 }
 
+.dashboard .sidebar-main .sidebar .icons {
+    width: 92%;
+    margin: auto;
+}
+
+/* SIDEBAR ICONS */
+.dashboard .sidebar-main .sidebar .icons .sidebar-icons {
+    height: 65vh;
+}
+
+.dashboard .sidebar-main .sidebar .icons .sidebar-icons .btn-1 {
+    display: flex;
+    width: 100%;
+    padding: 14px 0px 14px 15px;
+    border-radius: 10px;
+    border: none;
+    gap: 10px;
+}
+
+.dashboard .sidebar-main .sidebar .icons .sidebar-icons .btn-1 i, p {
+    font-size: 18px;
+}
+
+.dashboard .sidebar-main .sidebar .icons .sidebar-icons .btn-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    width: 100%;
+    padding: 14px 50px 14px 15px;
+    border: none;
+}
+
+.dashboard .sidebar-main .sidebar .icons .sidebar-icons .btn-2 .btn {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.dashboard .sidebar-main .sidebar .icons .sidebar-icons .btn-2 i, p {
+    font-size: 18px;
+}
+
+
+/* HELP */
+.dashboard .sidebar-main .sidebar .icons .help {
+    height: 35vh;
+}
+
+
+
+
+
+
 .dashboard .sidebar-main .main-body {
     width: 80%;
 }
 
 
-
+.dashboard  .line::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    /* background-color: #dee1e6; */
+    background-color: #aebbcd;
+    margin: 0px auto 20px auto;
+}
 
 .red {
     /* border: 2px solid red; */

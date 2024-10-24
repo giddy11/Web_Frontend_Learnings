@@ -522,10 +522,6 @@ body {
     margin-bottom: 5px;
 }
 
-.mb {
-    margin-bottom: 60px;
-}
-
 .dashboard .sidebar-main .main-body .container .details .activities .info a:hover {
     background-color: #F4F4F4;
 }
