@@ -184,10 +184,67 @@ body {
     font-size: 18px;
 }
 
+.dashboard .sidebar-main .sidebar .icons .sidebar-icons .active {
+    background-color: #d3ddea;
+}
+
+.dashboard .sidebar-main .sidebar .icons .sidebar-icons .bg-none {
+    background-color: transparent;
+}
+
+.dashboard .sidebar-main .sidebar .icons .sidebar-icons .bg-none:hover {
+    background-color: #d3ddea;
+}
+
 
 /* HELP */
 .dashboard .sidebar-main .sidebar .icons .help {
     height: 35vh;
+}
+
+.dashboard .sidebar-main .sidebar .icons .help .started {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dashboard .sidebar-main .sidebar .icons .help .started .started-2 {
+    display: flex;
+    gap: 10px;
+    color: #748192;
+}
+
+.dashboard .sidebar-main .sidebar .icons .help .started .num {
+    padding: 6px 8px;
+    background-color: #aebbcd;
+    border-radius: 7px;
+    font-weight: bold;
+}
+
+.dashboard .sidebar-main .sidebar .icons .help .theme {
+    width: 95%;
+    margin-top: 15px;
+    height: 2.5rem;
+    display: flex;
+    border-radius: 30px;
+    padding: 5px;
+    background-color: #aebbcd;
+}
+
+.dashboard .sidebar-main .sidebar .icons .help .theme button {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 0px 13%;
+    gap: 7px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    /* background-color: transparent; */
+}
+
+.dashboard .sidebar-main .sidebar .icons .help .theme .non-active {
+    background-color: transparent;
 }
 
 
@@ -208,6 +265,13 @@ body {
     /* background-color: #dee1e6; */
     background-color: #aebbcd;
     margin: 0px auto 20px auto;
+}
+
+
+
+
+.bg-white {
+    background-color: white;
 }
 
 .red {
