@@ -9,7 +9,7 @@ body {
 }
 
 .dashboard .header {
-    height: 10vh;
+    height: 15vh;
     display: flex;
     background-color: white;
 }
@@ -254,7 +254,13 @@ body {
 
 .dashboard .sidebar-main .main-body {
     width: 80%;
+    background-color: #d3ddea;
+    position: relative;
+    height: 100vh;
+    bottom: 1rem;
 }
+
+
 
 
 .dashboard  .line::after {
