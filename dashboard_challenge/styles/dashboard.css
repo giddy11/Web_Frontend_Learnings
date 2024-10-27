@@ -260,6 +260,28 @@ body {
     bottom: 1rem;
 }
 
+.dashboard .sidebar-main .main-body .container {
+    height: 89vh;
+    width: 96%;
+    margin: 35px auto;
+}
+
+.dashboard .sidebar-main .main-body .container .details {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.dashboard .sidebar-main .main-body .container .details .views {
+    width: 70%;
+    height: 89vh;
+}
+
+.dashboard .sidebar-main .main-body .container .details .activities {
+    width: 30%;
+    height: 89vh;
+}
+
 
 
 
