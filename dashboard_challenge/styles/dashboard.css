@@ -277,6 +277,33 @@ body {
     height: 89vh;
 }
 
+.dashboard .sidebar-main .main-body .container .details .views .box .box-container {
+    width: 95%;
+    margin: auto;
+    padding: 15px 0px;
+}
+
+.dashboard .sidebar-main .main-body .container .details .views .box .box-container .top {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 15px;
+}
+
+.dashboard .sidebar-main .main-body .container .details .views .box .box-container .top .line::after {
+    content: '';
+    display: block;
+    width: 13px;
+    height: 25px;
+    border-radius: 4px;
+    background-color: #b5e4ca;
+}
+
+
+
+
+
+
 .dashboard .sidebar-main .main-body .container .details .activities {
     width: 30%;
     height: 89vh;
