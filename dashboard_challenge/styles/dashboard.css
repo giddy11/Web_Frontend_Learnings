@@ -277,6 +277,10 @@ body {
     height: 89vh;
 }
 
+.dashboard .sidebar-main .main-body .container .details .views .box {
+    margin-bottom: 20px;
+}
+
 .dashboard .sidebar-main .main-body .container .details .views .box .box-container {
     width: 95%;
     margin: auto;
@@ -288,6 +292,28 @@ body {
     align-items: center;
     gap: 10px;
     padding-bottom: 15px;
+}
+
+
+/* Lines */
+.dashboard .sidebar-main .main-body .container .details .v-line::after {
+    content: '';
+    display: block;
+    width: 13px;
+    height: 25px;
+    border-radius: 4px;
+}
+
+.dashboard .sidebar-main .main-body .container .details .views .box .box-container .top .line-bg-lblue::after {
+    background-color: #cabdff;
+}
+
+.dashboard .sidebar-main .main-body .container .details .views .box .box-container .top .line-bg-pink::after {
+    background-color: #ffbc99;
+}
+
+.dashboard .sidebar-main .main-body .container .details .views .box .box-container .top .line-bg-lgreen::after {
+    background-color: #b5e4ca;
 }
 
 .dashboard .sidebar-main .main-body .container .details .views .box .box-container .top .line::after {
@@ -348,4 +374,8 @@ body {
 .blue {
     /* border: 2px solid blue; */
     background-color: blue;
+}
+
+.white {
+    background-color: white;
 }
