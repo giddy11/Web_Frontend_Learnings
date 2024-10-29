@@ -308,12 +308,34 @@ body {
 
 
 /* PRO TIPS */
-.dashboard .sidebar-main .main-body .container .details .views .box .box-container .pro-tips-grid {
+/* .dashboard .sidebar-main .main-body .container .details .views .box .box-container .pro-tips-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 15px;
     margin-top: 20px;
     padding-left: 15px;
+} */
+
+.dashboard .sidebar-main .main-body .container .details .views .box .box-container .pro-tips-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns by default */
+    gap: 15px;
+    margin-top: 20px;
+    padding-left: 15px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) { /* For tablets and small devices */
+    .dashboard .sidebar-main .main-body .container .details .views .box .box-container .pro-tips-grid {
+        grid-template-columns: 1fr; /* 1 column */
+        padding-left: 0; /* Remove left padding on smaller screens */
+    }
+}
+
+@media (max-width: 480px) { /* For mobile devices */
+    .dashboard .sidebar-main .main-body .container .details .views .box .box-container .pro-tips-grid {
+        gap: 10px; /* Reduce gap on mobile for better spacing */
+    }
 }
 
 .dashboard .sidebar-main .main-body .container .details .views .box .box-container .pro-tips-grid a {
