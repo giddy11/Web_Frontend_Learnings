@@ -98,16 +98,37 @@ let newMap = filteredStudent.map((element) => {
 
 // the student with the highest score
 let studentHighestScore = students.reduce((prevVal, currVal, index) => {
-    console.log(`${currVal.score} > ${prevVal.score}, count - ${index}`)
+    // console.log(`${currVal.score} > ${prevVal.score}, count - ${index}`)
     if (currVal.score > prevVal.score){
-        console.log(`score - ${currVal.score}`)
+        // console.log(`score - ${currVal.score}`)
         return currVal;
     } else {
-        console.log(`score in else - ${currVal.score}`)
+        // console.log(`score in else - ${currVal.score}`)
         return prevVal
     }
 
     // return student.score > highest.score ? student : highest;
-})
+}, students[0])
 
-console.log(studentHighestScore)
+console.log("Student highest score is: ", studentHighestScore);
+
+// use the reduce method to calculate the average score of all students.
+let studentAvg = students.reduce((total, student) => total + student.score, 0) / students.length;
+
+
+console.log("The average score is: ", studentAvg)
+
+// use sort method to sort the student in descending order based on their age
+let oldestStudents = students.sort((a,b) => b.age - a.age);
+console.log("Sorted students by age: ", oldestStudents)
+
+// slice the sorted array to get the first 5 students.
+let firstFiveStudentsByAge = oldestStudents.slice(0,5);
+console.log("First 5 students by age: ", firstFiveStudentsByAge)
+
+// use the foreach methods to print the n ames of students who are 21 years older
+let namesOfStudentsAt21 = students.forEach(student => {
+    if (student.age === 21) {
+        console.log(student.name)
+    }
+})
