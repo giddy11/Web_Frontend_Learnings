@@ -1,5 +1,7 @@
 /**
  * array and objects
+ * 
+ * read about the below
  * object.entries():
  * object keys
  * object values
@@ -18,7 +20,7 @@
  * for in
  * for of
  * 
- * Read up
+ *
  */
 
 //finding an array in an object
