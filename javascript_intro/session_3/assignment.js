@@ -128,7 +128,7 @@ console.log("First 5 students by age: ", firstFiveStudentsByAge)
 
 // use the foreach methods to print the n ames of students who are 21 years older
 let namesOfStudentsAt21 = students.forEach(student => {
-    if (student.age === 21) {
+    if (student.age >= 21) {
         console.log(student.name)
     }
 })
