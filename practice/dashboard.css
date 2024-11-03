@@ -433,7 +433,7 @@ body {
     /* margin: 0px auto 20px auto; */
 }
 
-.dashboard .sidebar-main .main-body .container .details .views .box .box-container .top .line-bg-pink::after {
+.dashboard .sidebar-main .main-body .container .details .top .line-bg-pink::after {
     background-color: #FFBC99;
 }
 
@@ -441,11 +441,11 @@ body {
     background-color: #CABDFF;
 }
 
-.dashboard .sidebar-main .main-body .container .details .views .box .box-container .top .line-bg-lgreen::after {
+.dashboard .sidebar-main .main-body .container .details .top .line-bg-lgreen::after {
     background-color: #B5E4CA;
 }
 
-.dashboard .sidebar-main .main-body .container .details .views .box .box-container .top .line-bg-aqua::after {
+.dashboard .sidebar-main .main-body .container .details .top .line-bg-aqua::after {
     background-color: #B1E5FC;
 }
 
@@ -488,6 +488,11 @@ body {
     margin-bottom: 20px;
     padding: 0px 5px;
     color: rgb(39, 35, 35);
+}
+
+.dashboard .sidebar-main .main-body .container .details .activities .info .cost:hover {
+    color: #2c76d5;
+    cursor: pointer;
 }
 
 .dashboard .sidebar-main .main-body .container .details .activities .info .cost .left {
@@ -550,6 +555,100 @@ body {
 
 .dashboard .sidebar-main .main-body .container .details .activities .info a:hover {
     background-color: #F4F4F4;
+}
+
+/* COMMENTS */
+.dashboard .sidebar-main .main-body .container .details .activities .info .text {
+    text-align: center;
+}
+
+.dashboard .sidebar-main .main-body .container .details .activities .info .img-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -10px;
+    /* margin-top: 12px; */
+}
+
+.dashboard .sidebar-main .main-body .container .details .activities .info .img-info .left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.dashboard .sidebar-main .main-body .container .details .activities .info .img-info .left img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 3rem;
+    cursor: pointer;
+}
+
+.dashboard .sidebar-main .main-body .container .details .activities .info .img-info .left .contact-info {
+    margin-top: 40px;
+}
+
+.dashboard .sidebar-main .main-body .container .details .activities .info .img-info .time {
+    margin-top: 40px;
+    color: #aebbcd;
+}
+
+.dashboard .sidebar-main .main-body .container .details .activities .info .img-info .left .contact-info .name-details .username {
+    color: #aebbcd;
+}
+
+.dashboard .sidebar-main .main-body .container .details .activities .info .img-info .left .contact-info .name-details:first-of-type:hover b,
+.dashboard .sidebar-main .main-body .container .details .activities .info .img-info .left .contact-info .name-details:first-of-type:hover span {
+  color: #2c76d5;
+}
+
+.dashboard .sidebar-main .main-body .container .details .activities .info .img-info .left .contact-info .name-details .when {
+    color: #aebbcd;
+}
+
+.dashboard .sidebar-main .main-body .container .details .activities .info .img-info .left .contact-info .name-details {
+    margin-bottom: 5px;
+}
+
+.dashboard .sidebar-main .main-body .container .details .activities .info .img-info .left .contact-info .name-details:hover {
+    color: #2c76d5;
+    cursor: pointer;
+}
+
+.dashboard .sidebar-main .main-body .container .details .activities .info .img-info .left img:hover+.contact-info .name-details:first-of-type,
+.dashboard .sidebar-main .main-body .container .details .activities .info .img-info .left img:hover+.contact-info .name-details .username {
+    color: #2c76d5;
+}
+
+.dashboard .sidebar-main .main-body .container .details .activities .info .img-info .left .contact-info p {
+    margin-top: 15px;
+    /* margin-bottom: 15px; */
+}
+
+.dashboard .sidebar-main .main-body .container .details .activities .info .reaction {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-left: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #aebbcd;
+    /* margin: 15px 0px; */
+}
+
+.dashboard .sidebar-main .main-body .container .details .activities .info .reaction div {
+    /* border: 1px solid red; */
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 2rem;
+    /* background-color: #e5effe; */
+}
+
+.dashboard .sidebar-main .main-body .container .details .activities .info .reaction div:hover {
+    background-color: #e5effe;
+    cursor: pointer;
 }
 
 

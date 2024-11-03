@@ -296,32 +296,6 @@ body {
 }
 
 
-/* Lines */
-.dashboard .sidebar-main .main-body .container .details .v-line::after {
-    content: '';
-    display: block;
-    width: 13px;
-    height: 25px;
-    border-radius: 4px;
-}
-
-.dashboard .sidebar-main .main-body .container .details .views .box .box-container .top .line-bg-lblue::after {
-    background-color: #cabdff;
-}
-
-.dashboard .sidebar-main .main-body .container .details .views .box .box-container .top .line-bg-pink::after {
-    background-color: #ffbc99;
-}
-
-.dashboard .sidebar-main .main-body .container .details .views .box .box-container .top .line-bg-lgreen::after {
-    background-color: #b5e4ca;
-}
-
-.dashboard .sidebar-main .main-body .container .details .views .box .box-container .top .line-bg-aqua::after {
-    background-color: #b1e5fc;
-}
-
-
 .dashboard .sidebar-main .main-body .container .details .views .box .box-container .pro-tips-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -442,15 +416,32 @@ body {
 
 
 
-
+/* ACTIVITIES */
 .dashboard .sidebar-main .main-body .container .details .activities {
     width: 30%;
     height: 89vh;
 }
 
+.dashboard .sidebar-main .main-body .container .details .activities .activities-container {
+    margin-bottom: 15px;
+}
+
+.dashboard .sidebar-main .main-body .container .details .activities .activities-container .info {
+    width: 93%;
+    margin: auto;
+    padding: 15px 0px;
+}
+
+.dashboard .sidebar-main .main-body .container .details .activities .activities-container .info .top {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0px 5px;
+}
 
 
 
+/* LINES */
 .dashboard  .line::after {
     content: '';
     display: block;
@@ -459,6 +450,30 @@ body {
     /* background-color: #dee1e6; */
     background-color: #aebbcd;
     margin: 0px auto 20px auto;
+}
+
+.dashboard .sidebar-main .main-body .container .details .v-line::after {
+    content: '';
+    display: block;
+    width: 13px;
+    height: 25px;
+    border-radius: 4px;
+}
+
+.dashboard .sidebar-main .main-body .container .details .top .line-bg-lblue::after {
+    background-color: #cabdff;
+}
+
+.dashboard .sidebar-main .main-body .container .details .top .line-bg-pink::after {
+    background-color: #ffbc99;
+}
+
+.dashboard .sidebar-main .main-body .container .details .top .line-bg-lgreen::after {
+    background-color: #b5e4ca;
+}
+
+.dashboard .sidebar-main .main-body .container .details .top .line-bg-aqua::after {
+    background-color: #b1e5fc;
 }
 
 
