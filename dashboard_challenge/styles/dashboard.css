@@ -439,6 +439,92 @@ body {
     padding: 0px 5px;
 }
 
+.dashboard .sidebar-main .main-body .container .details .activities .activities-container .info .product {
+    margin: 20px 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dashboard .sidebar-main .main-body .container .details .activities .activities-container .info .cost {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 0px 5px;
+    color: rgb(39, 35, 35);
+    cursor: pointer;
+}
+
+.dashboard .sidebar-main .main-body .container .details .activities .activities-container .info .cost:hover {
+    color: #2c76d5;
+}
+
+.dashboard .sidebar-main .main-body .container .details .activities .activities-container .info .cost .left {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.dashboard .sidebar-main .main-body .container .details .activities .activities-container .info .cost .left .img {
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+.dashboard .sidebar-main .main-body .container .details .activities .activities-container .info .cost .left img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.dashboard .sidebar-main .main-body .container .details .activities .activities-container .info .cost .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dashboard .sidebar-main .main-body .container .details .activities .activities-container .info .cost .right .active {
+    background-color: #f4f4f4;
+    padding: 5px 10px;
+    margin-top: 5px;
+    border-radius: 10px;
+    color: #63a274;
+    font-weight: bold;
+}
+
+.dashboard .sidebar-main .main-body .container .details .activities .activities-container .info .cost .right .active:hover {
+    cursor: default;
+}
+
+.dashboard .sidebar-main .main-body .container .details .activities .activities-container .info .cost .right .deactivate {
+    background-color: #fa9e9eb0;
+    padding: 5px 10px;
+    margin-top: 5px;
+    border-radius: 10px;
+    color: red;
+    font-weight: bold;
+}
+
+.dashboard .sidebar-main .main-body .container .details .activities .activities-container .info .cost .right .deactivate:hover {
+    cursor: default;
+}
+
+.dashboard .sidebar-main .main-body .container .details .activities .activities-container .info a {
+    text-decoration: none;
+    border: 1px solid #d3ddea;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 12px 0px;
+    border-radius: 5px;
+    color: black;
+    margin-bottom: 5px;
+}
+
+.dashboard .sidebar-main .main-body .container .details .activities .activities-container .info a:hover {
+    background-color: #f4f4f4;
+    border: none;
+}
 
 
 /* LINES */
