@@ -13,6 +13,7 @@
       src="https://kit.fontawesome.com/a11a819e40.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   </head>
   <body>
     <div class="dashboard">
@@ -118,26 +119,35 @@
                 <!-- Dashboard Overview -->
                 <div class="box white">
                   <div class="box-container redx">
-                    <!-- Pro Tips -->
-                    <div class="top">
-                      <div class="v-line line-bg-pink redx"></div>
-                      <h2>Overview</h2>
+                    <div class="product-views">
+                      <div class="top">
+                        <div class="v-line line-bg-pink redx"></div>
+                        <h2>Overview</h2>
+                      </div>
+                      <div class="select redx">
+                        <input type="text" placeholder="This year">
+                        <button class="drop-down"><i class="fa-solid fa-caret-down"></i></button>
+                      </div>
                     </div>
-                    <p></p>
-                    <div class="pro-tips-grid"></div>
                   </div>
                 </div>
 
                 <!-- Product views -->
                 <div class="box white">
                   <div class="box-container redx">
-                    <!-- Pro Tips -->
-                    <div class="top">
-                      <div class="v-line line-bg-lblue redx"></div>
-                      <h2>Product views</h2>
+                    <div class="product-views">
+                      <div class="top">
+                        <div class="v-line line-bg-lblue redx"></div>
+                        <h2>Product views</h2>
+                      </div>
+                      <div class="select redx">
+                        <input type="text" placeholder="Last 7 days">
+                        <button class="drop-down"><i class="fa-solid fa-caret-down"></i></button>
+                      </div>
                     </div>
-                    <p>Need some ideas for the next product?</p>
-                    <div class="pro-tips-grid"></div>
+                    
+                    <!-- <div class="pro-tips-grid"></div> -->
+                    <canvas id="myChart" width="400" height="200"></canvas>
                   </div>
                 </div>
 
@@ -324,44 +334,6 @@
                 </div> -->
 
                 <!-- remove this later -->
-                <div class="box white">
-                  <div class="box-container redx">
-                    <div class="top">
-                      <div class="line redx"></div>
-                      <h2>Pro tips</h2>
-                    </div>
-                    <p>Need some ideas for the next product?</p>
-                    <div class="pro-tips-grid">
-                      
-                    </div>
-                  </div>
-                </div>
-
-                <div class="box white">
-                  <div class="box-container redx">
-                    <div class="top">
-                      <div class="line redx"></div>
-                      <h2>Pro tips</h2>
-                    </div>
-                    <p>Need some ideas for the next product?</p>
-                    <div class="pro-tips-grid">
-                      
-                    </div>
-                  </div>
-                </div>
-
-                <div class="box white">
-                  <div class="box-container redx">
-                    <div class="top">
-                      <div class="line redx"></div>
-                      <h2>Pro tips</h2>
-                    </div>
-                    <p>Need some ideas for the next product?</p>
-                    <div class="pro-tips-grid">
-                      
-                    </div>
-                  </div>
-                </div>
 
                 <div class="box white">
                   <div class="box-container redx">
@@ -612,5 +584,7 @@
         </div>
       </div>
     </div>
+
+    <script src="dashboard.js"></script>
   </body>
 </html>

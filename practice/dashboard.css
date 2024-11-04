@@ -301,6 +301,49 @@ body {
     padding-bottom: 15px;
 }
 
+/* PRODUCT VIEWS */
+.dashboard .sidebar-main .main-body .container .details .views .box .box-container .product-views {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dashboard .sidebar-main .main-body .container .details .views .box .box-container .select {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 9.5rem;
+    padding: 5px 5px;
+    border-radius: 0.5rem;
+    border: 1px solid #aebbcd;
+}
+
+.dashboard .sidebar-main .main-body .container .details .views .box .box-container .select input {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    width: 80%;
+    font-size: 16px;
+    font-weight: 500;
+    color: #b3a9a9;
+}
+
+.dashboard .sidebar-main .main-body .container .details .views .box .box-container .select button {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.dashboard .sidebar-main .main-body .container .details .views .box .box-container .select button:hover {
+    background-color: #aebbcd;
+}
+
 
 /* PRO TIPS */
 /* .dashboard .sidebar-main .main-body .container .details .views .box .box-container .pro-tips-grid {
