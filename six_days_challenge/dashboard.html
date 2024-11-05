@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/a11a819e40.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <div class="dashboard">
+      <!-- HEADER -->
+      <div class="header red">
+        <div class="logo purplex">
+          <i class="fa-brands fa-google"></i>
+        </div>
+        <div class="right">
+          <div class="search red">
+            <label for="search"
+              ><i class="fa-solid fa-magnifying-glass" id="search"></i
+            ></label>
+            <input type="text" placeholder="Search..." id="search" />
+          </div>
+          <div class="links">
+            <button class="message btn redx">
+              <i class="fa-solid fa-message"></i>
+            </button>
+            <button class="notification btn">
+              <i class="fa-solid fa-bell"></i>
+            </button>
+            <button class="btnx">
+              <img
+                src="https://media.istockphoto.com/id/1300512215/photo/headshot-portrait-of-smiling-ethnic-businessman-in-office.jpg?s=612x612&w=0&k=20&c=QjebAlXBgee05B3rcLDAtOaMtmdLjtZ5Yg9IJoiy-VY="
+                alt=""
+              />
+            </button>
+            <a href="" class="signin"> Sign In </a>
+            <a href="" class="signup"> Sign Up </a>
+          </div>
+        </div>
+      </div>
+      <div class="sidebar-main">
+        <!-- SIDEBAR -->
+        <div class="sidebar bluex">
+          <div class="line"></div>
+          <div class="icons redx">
+            <div class="sidebar-icons aquamarinex">
+              <button class="btn-1 active">
+                <i class="fa-solid fa-house"></i>
+                <p>Home</p>
+              </button>
+              <button class="btn-2 bg-none">
+                <div class="btn">
+                  <i class="fa-regular fa-gem"></i>
+                  <p>Products</p>
+                </div>
+                <i class="fa-solid fa-angle-down"></i>
+              </button>
+              <button class="btn-2 bg-none">
+                <div class="btn">
+                  <i class="fa-solid fa-person"></i>
+                  <p>Customers</p>
+                </div>
+                <i class="fa-solid fa-angle-down"></i>
+              </button>
+              <button class="btn-1 bg-none">
+                <i class="fa-solid fa-house"></i>
+                <p>Shop</p>
+              </button>
+              <button class="btn-2 bg-none">
+                <div class="btn">
+                  <i class="fa-solid fa-coins"></i>
+                  <p>Income</p>
+                </div>
+                <i class="fa-solid fa-angle-down"></i>
+              </button>
+              <button class="btn-1 bg-none">
+                <i class="fa-solid fa-rectangle-ad"></i>
+                <p>Promote</p>
+              </button>
+            </div>
+            <div class="help redx">
+              <div class="line"></div>
+              <div class="started">
+                <div class="started-2">
+                  <i class="fa-solid fa-question"></i>
+                  <p>Help & getting started</p>
+                </div>
+                <div class="num">8</div>
+              </div>
+              <div class="theme">
+                <button class="bg-white bg-transparentx">
+                  <i class="fa-solid fa-sun"></i>
+                  <p>Light</p>
+                </button>
+                <button class="bg-transparent bg-whitex">
+                  <i class="fa-solid fa-moon"></i>
+                  <p>Dark</p>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- MAIN BODY -->
+        <div class="main-body greenx">
+          <div class="container aquamarinex">
+            <!-- <h1>Dashboard</h1> -->
+            <div class="details">
+              <div class="views bluex">
+                <!-- Dashboard Overview -->
+                <!-- <div class="box white">
+                  <div class="box-container redx">
+                    <div class="product-views">
+                      <div class="top">
+                        <div class="v-line line-bg-pink redx"></div>
+                        <h2>Overview</h2>
+                      </div>
+                      <div class="select redx">
+                        <input type="text" placeholder="This year">
+                        <button class="drop-down"><i class="fa-solid fa-caret-down"></i></button>
+                      </div>
+                    </div>
+                  </div>
+                </div> -->
+
+                <!-- Product views -->
+                <!-- <div class="box white">
+                  <div class="box-container redx">
+                    <div class="product-views">
+                      <div class="top">
+                        <div class="v-line line-bg-lblue redx"></div>
+                        <h2>Product views</h2>
+                      </div>
+                      <div class="select redx">
+                        <input type="text" placeholder="Last 7 days">
+                        <button class="drop-down"><i class="fa-solid fa-caret-down"></i></button>
+                      </div>
+                    </div>
+                    
+                    <canvas id="myChart" width="400" height="200"></canvas>
+                  </div>
+                </div> -->
+
+                <div class="box whitex">
+                  <div class="box-container redx">
+                    <!-- Pro Tips -->
+                    <!-- <div class="top">
+                      <div class="v-line line-bg-lgreen redx"></div>
+                      <h2>Pro tips</h2>
+                    </div> -->
+                    <!-- <p>Need some ideas for the next product?</p> -->
+                    <div class="pro-tips-grid">
+                      <!-- <a href="#" class="purplex">
+                        <div class="icon">
+                          <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                        <div class="tip-item">
+                          <h4>Early access</h4>
+                          <div class="tip-details">
+                            <span class="new">New</span>
+                            <div class="time greenx">
+                              <div class="img">
+                                <img
+                                  src="https://cdn.pixabay.com/photo/2017/10/10/00/49/female-2835524_1280.jpg"
+                                  alt=""
+                                />
+                              </div>
+                              <span class="min-info">3 mins read</span>
+                            </div>
+                          </div>
+                        </div>
+                      </a> -->
+
+                      <!-- <a href="#" class="purplex">
+                        <div class="icon">
+                          <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                        <div class="tip-item">
+                          <h4>Asset use guidelines</h4>
+                          <div class="tip-details">
+                            <span class="new">New</span>
+                            <div class="time greenx">
+                              <div class="img">
+                                <img
+                                  src="https://cdn.pixabay.com/photo/2017/10/10/00/49/female-2835524_1280.jpg"
+                                  alt=""
+                                />
+                              </div>
+                              <span class="min-info">Time</span>
+                            </div>
+                          </div>
+                        </div>
+                      </a> -->
+
+                      <!-- <a href="#" class="purplex">
+                        <div class="icon">
+                          <i class="fa-solid fa-download"></i>
+                        </div>
+                        <div class="tip-item">
+                          <h4>Exclusive downloads</h4>
+                          <div class="tip-details">
+                            <span class="new">New</span>
+                            <div class="time greenx">
+                              <div class="img">
+                                <img
+                                  src="https://cdn.pixabay.com/photo/2017/10/10/00/49/female-2835524_1280.jpg"
+                                  alt=""
+                                />
+                              </div>
+                              <span class="min-info">2 mins read</span>
+                            </div>
+                          </div>
+                        </div>
+                      </a> -->
+
+                      <!-- <a href="#" class="purplex">
+                        <div class="icon">
+                          <i class="fa-solid fa-camera-retro"></i>
+                        </div>
+                        <div class="tip-item">
+                          <h4>Behind the scenes</h4>
+                          <div class="tip-details">
+                            <span class="new">New</span>
+                            <div class="time greenx">
+                              <div class="img">
+                                <img
+                                  src="https://cdn.pixabay.com/photo/2017/10/10/00/49/female-2835524_1280.jpg"
+                                  alt=""
+                                />
+                              </div>
+                              <span class="min-info">4 mins read</span>
+                            </div>
+                          </div>
+                        </div>
+                      </a> -->
+
+                      <!-- <a href="#" class="purplex">
+                        <div class="icon">
+                          <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div class="tip-item">
+                          <h4>Asset use guidelines</h4>
+                          <div class="tip-details">
+                            <span class="new">New</span>
+                            <div class="time greenx">
+                              <div class="img">
+                                <img
+                                  src="https://cdn.pixabay.com/photo/2017/10/10/00/49/female-2835524_1280.jpg"
+                                  alt=""
+                                />
+                              </div>
+                              <span class="min-info">3 mins read</span>
+                            </div>
+                          </div>
+                        </div>
+                      </a> -->
+
+                      <!-- <a href="#" class="purplex">
+                        <div class="icon">
+                          <i class="fa-regular fa-pen-to-square"></i>
+                        </div>
+                        <div class="tip-item">
+                          <h4>Life & work updates</h4>
+                          <div class="tip-details">
+                            <span class="new">New</span>
+                            <div class="time greenx">
+                              <div class="img">
+                                <img
+                                  src="https://cdn.pixabay.com/photo/2017/10/10/00/49/female-2835524_1280.jpg"
+                                  alt=""
+                                />
+                              </div>
+                              <span class="min-info">3 mins read</span>
+                            </div>
+                          </div>
+                        </div>
+                      </a> -->
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Get More Customers -->
+                <!-- <div class="box white">
+                  <div class="box-container redx">
+                    <div class="top">
+                      <div class="v-line line-bg-aqua redx"></div>
+                      <h2>Get more customers!</h2>
+                    </div>
+                    <p>
+                      50% of new customers explore products because the author
+                      sharing on the social media network. Gain your earnings
+                      right now! 🔥
+                    </p>
+                    <div class="reach-out redx">
+                      <a href="" class="greenx">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <span>Facebook</span>
+                      </a>
+                      <a href="" class="greenx">
+                        <i class="fa-brands fa-twitter"></i>
+                        <span>Twitter</span>
+                      </a>
+                      <a href="" class="greenx">
+                        <i class="fa-brands fa-instagram"></i>
+                        <span>Instagram</span>
+                      </a>
+                    </div>
+                  </div>
+                </div> -->
+
+                <!-- Get More Customers -->
+                <!-- <div class="box white">
+                  <div class="box-container redx">
+                    <div class="top">
+                      <div class="line redx"></div>
+                      <h2>Pro tips</h2>
+                    </div>
+                    <p>Need some ideas for the next product?</p>
+                    <div class="pro-tips-grid">
+                      
+                    </div>
+                  </div>
+                </div> -->
+
+                <!-- remove this later -->
+
+                <!-- <div class="box white">
+                  <div class="box-container redx">
+                    <div class="top">
+                      <div class="line redx"></div>
+                      <h2>Pro tips</h2>
+                    </div>
+                    <p>Need some ideas for the next product?</p>
+                    <div class="pro-tips-grid">
+                      
+                    </div>
+                  </div>
+                </div>
+
+                <div class="box white">
+                  <div class="box-container redx">
+                    <div class="top">
+                      <div class="line redx"></div>
+                      <h2>Pro tips</h2>
+                    </div>
+                    <p>Need some ideas for the next product?</p>
+                    <div class="pro-tips-grid">
+                      
+                    </div>
+                  </div>
+                </div>
+
+                <div class="box white">
+                  <div class="box-container redx">
+                    <div class="top">
+                      <div class="line redx"></div>
+                      <h2>Pro tips</h2>
+                    </div>
+                    <p>Need some ideas for the next product?</p>
+                    <div class="pro-tips-grid">
+                      
+                    </div>
+                  </div>
+                </div> -->
+
+                <!-- delete the above -->
+
+                
+              </div>
+              <div class="activities purplex">
+                <!-- Popular products -->
+                <!-- <div class="activities-container white">
+                  <div class="info greenx">
+                    <div class="top">
+                      <div class="v-line line-bg-lblue"></div>
+                      <h2>Popular products</h2>
+                    </div>
+                    <div class="product">
+                      <span>Product</span>
+                      <span>Earning</span>
+                    </div>
+                    <div class="line"></div>
+                    <div class="cost redx">
+                      <div class="left">
+                        <div class="img">
+                          <img src="https://img.freepik.com/premium-photo/elegant-furniture-chair-design-stylish-room-setting-modern-interior-inspiration_947814-118218.jpg" alt="">
+                        </div>
+                        <div class="name">
+                          <p>Crypter - NFT UI kit</p>
+                          <span>icon</span>
+                        </div>
+                      </div>
+                      <div class="right">
+                        <span>$2,453.80</span>
+                        <span class="active">Active</span>
+                      </div>
+                    </div>
+
+                    <div class="cost redx">
+                      <div class="left">
+                        <div class="img">
+                          <img src="https://img.freepik.com/premium-photo/elegant-furniture-chair-design-stylish-room-setting-modern-interior-inspiration_947814-117265.jpg?size=338&ext=jpg&ga=GA1.1.672697106.1729209600&semt=ais_hybrid" alt="">
+                        </div>
+                        <div class="name">
+                          <p>Bento Matte 3D</p>
+                          <span>illustration 1.0</span>
+                        </div>
+                      </div>
+                      <div class="right">
+                        <span>$105.60</span>
+                        <span class="deactivate">Deactivate</span>
+                      </div>
+                    </div>
+
+                    <div class="cost redx">
+                      <div class="left">
+                        <div class="img">
+                          <img src="https://img.freepik.com/premium-photo/elegant-furniture-chair-design-stylish-room-setting-modern-interior-inspiration_947814-118218.jpg" alt="">
+                        </div>
+                        <div class="name">
+                          <p>Excellent material 3D</p>
+                          <span>chair</span>
+                        </div>
+                      </div>
+                      <div class="right">
+                        <span>$648.60</span>
+                        <span class="active">Active</span>
+                      </div>
+                    </div>
+
+                    <div class="cost redx">
+                      <div class="left">
+                        <div class="img">
+                          <img src="https://img.freepik.com/premium-photo/elegant-furniture-chair-design-stylish-room-setting-modern-interior-inspiration_947814-118218.jpg" alt="">
+                        </div>
+                        <div class="name">
+                          <p>Fleet - travel shopping</p>
+                          <span>kit</span>
+                        </div>
+                      </div>
+                      <div class="right">
+                        <span>$649.40</span>
+                        <span class="active">Active</span>
+                      </div>
+                    </div>
+
+                    <a href="">
+                      All products
+                    </a>
+                  </div>
+                </div> -->
+
+                <!-- Comments -->
+                <!-- <div class="activities-container white">
+                  <div class="info greenx">
+                    <div class="top">
+                      <div class="v-line line-bg-pink"></div>
+                      <h2>Comments</h2>
+                    </div>
+                    <div class="img-info redx">
+                      <div class="left">
+                        <img src="https://media.istockphoto.com/id/1300512215/photo/headshot-portrait-of-smiling-ethnic-businessman-in-office.jpg?s=612x612&w=0&k=20&c=QjebAlXBgee05B3rcLDAtOaMtmdLjtZ5Yg9IJoiy-VY=" alt="">
+                        <div class="contact-info greenx">
+                          <div class="name-details redx"><b>Ethel </b><span class="username">@ethel</span></div>
+                          <div class="name-details"><span class="when">On </span><b>Smiles - 3D icons</b></div>
+                          <p>Great work 😐</p>
+                        </div>
+                      </div>
+                      <span class="time">1h</span>                      
+                    </div>
+
+                    <div class="reaction">
+                      <div><i class="fa-solid fa-message"></i></div>
+                      <div><i class="fa-solid fa-message"></i></div>
+                      <div><i class="fa-solid fa-message"></i></div>
+                    </div>
+                    <br>
+                    <div class="line"></div>
+
+                    <div class="img-info redx">
+                      <div class="left">
+                        <img src="https://media.istockphoto.com/id/1300512215/photo/headshot-portrait-of-smiling-ethnic-businessman-in-office.jpg?s=612x612&w=0&k=20&c=QjebAlXBgee05B3rcLDAtOaMtmdLjtZ5Yg9IJoiy-VY=" alt="">
+                        <div class="contact-info greenx">
+                          <div class="name-details redx"><b>Jazmyn </b><span class="username">@jaz.designer</span></div>
+                          <div class="name-details"><span class="when">On </span><b>Fleet - Travel Shopping</b></div>
+                          <p>I need react version asap!</p>
+                        </div>
+                      </div>
+                      <span class="time">8h</span>                      
+                    </div>
+
+                    <div class="reaction">
+                      <div><i class="fa-solid fa-message"></i></div>
+                      <div><i class="fa-solid fa-message"></i></div>
+                      <div><i class="fa-solid fa-message"></i></div>
+                    </div>
+                    <br>
+                    <div class="line"></div>
+                    
+                    <div class="img-info redx">
+                      <div class="left">
+                        <img src="https://media.istockphoto.com/id/1300512215/photo/headshot-portrait-of-smiling-ethnic-businessman-in-office.jpg?s=612x612&w=0&k=20&c=QjebAlXBgee05B3rcLDAtOaMtmdLjtZ5Yg9IJoiy-VY=" alt="">
+                        <div class="contact-info greenx">
+                          <div class="name-details redx"><b>Jack </b><span class="username">@jack.developer</span></div>
+                          <div class="name-details"><span class="when">On </span><b>Excellent material 3D chair</b></div>
+                          <p>How can i buy only the design?</p>
+                        </div>
+                      </div>
+                      <span class="time">3h</span>                      
+                    </div>
+
+                    <div class="reaction">
+                      <div><i class="fa-solid fa-message"></i></div>
+                      <div><i class="fa-solid fa-message"></i></div>
+                      <div><i class="fa-solid fa-message"></i></div>
+                    </div>
+                    <br>
+                    <div class="line"></div>
+                    <br>
+                    
+
+                    <a href="">
+                      View all
+                    </a>
+                  </div>
+                </div> -->
+
+                <!-- Refund requests -->
+                <!-- <div class="activities-container white">
+                  <div class="info greenx">
+                    <div class="top">
+                      <div class="v-line line-bg-pink"></div>
+                      <h2>Refund requests</h2>
+                    </div>
+                    
+                    <div class="details">
+                      <div class="icon"><i class="fa-solid fa-basket-shopping"></i></div>
+                      <span>
+                        You have <b>52 open refund requests</b> to action. This includes <b>8 new requests.</b>😐
+                      </span>
+                    </div>
+
+                    <a href="">
+                      Review refund requests
+                    </a>
+                  </div>
+                </div> -->
+
+                <!-- <div class="activities-container white">
+                  <div class="info greenx">
+                    <div class="top">
+                      <div class="v-line line-bg-lblue"></div>
+                      <h2>Comments</h2>
+                    </div>
+                    
+                    <div class="line"></div>
+                    
+
+                    
+
+                    <a href="">
+                      All products
+                    </a>
+                  </div>
+                </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="dashboard.js"></script>
+  </body>
+</html>
