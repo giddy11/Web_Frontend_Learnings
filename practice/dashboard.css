@@ -8,6 +8,7 @@ body {
     overflow: hidden;
 }
 
+/* HEADER */
 .dashboard .header {
     height: 15vh;
     display: flex;
@@ -134,6 +135,10 @@ body {
 .dashboard .sidebar-main {
     display: flex;
     height: 85vh;
+    font-family: "Edu AU VIC WA NT Pre", cursive;
+    /* font-optical-sizing: auto; */
+    font-weight: 400;
+    /* font-style: normal; */
 }
 
 .dashboard .sidebar-main .sidebar {
@@ -156,6 +161,10 @@ body {
     border-radius: 10px;
     border: none;
     gap: 10px;
+    font-family: "Edu AU VIC WA NT Pre", cursive;
+    /* font-optical-sizing: auto; */
+    font-weight: 400;
+    font-style: normal;
     /* background-color: #d3ddea; */
 }
 
@@ -179,6 +188,10 @@ body {
     /* border-radius: 10px; */
     border: none;
     /* gap: 10px; */
+    font-family: "Edu AU VIC WA NT Pre", cursive;
+    /* font-optical-sizing: auto; */
+    font-weight: 400;
+    font-style: normal;
 }
 
 .dashboard .sidebar-main .sidebar .icons .sidebar-icons .btn-2 .btn {
