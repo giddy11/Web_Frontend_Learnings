@@ -156,6 +156,7 @@ body {
 
 .dashboard .sidebar-main .sidebar .icons .sidebar-icons .btn-1 {
     display: flex;
+    align-items: center;
     width: 100%;
     padding: 14px 0px 14px 15px;
     border-radius: 10px;
@@ -196,6 +197,7 @@ body {
 
 .dashboard .sidebar-main .sidebar .icons .sidebar-icons .btn-2 .btn {
     display: flex;
+    align-items: center;
     gap: 10px;
 }
 
@@ -610,6 +612,7 @@ body {
     text-decoration: none;
     color: black;
     display: flex;
+    align-items: center;
     justify-content: center;
     width: 16rem;
     padding: 15px 0px;
