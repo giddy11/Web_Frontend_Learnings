@@ -1,0 +1,144 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "jost", sans-serif;
+  }
+
+.register .container {
+    display: flex;
+    width: 100%;
+}
+
+.register .container .img {
+    width: 50%;
+    height: 100vh;
+}
+
+.register .container .img img {
+    width: 100%;
+    height: 100%;
+}
+
+.register .container .register-form {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #c7e1ce;
+}
+
+.register .container .register-form .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+}
+
+.register .container .register-form .container form {
+    width: 45%;
+    background-color: white;
+    margin-top: 20px;
+    border-radius: 5px;
+
+}
+
+.register .container .register-form .container form .container {
+    width: 95%;
+    margin: auto;
+}
+
+.register .container .register-form .container form .container .fill {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0px;
+}
+
+.register .container .register-form .container form .container .fill label {
+    padding-bottom: 8px;
+    font-weight: bold;
+}
+
+.register .container .register-form .container form .container .fill input {
+    padding: 8px 5px;
+    border-radius: 5px;
+    border: 1px solid rgb(217, 209, 209);
+}
+
+.register .container .register-form .container form .container .fill input .forgot-password {
+    display: flex;
+    justify-content: right;
+    margin-top: 55px;
+}
+
+.register .container .register-form .container form .container .remember-me {
+    width: 100%;
+    display: flex;
+    padding: 10px 8px;
+    gap: 5px;
+    align-items: center;
+}
+
+.register .container .register-form .container form .container .remember-me input:checked {
+    background-color: #3bd858;
+}
+
+.register .container .register-form .container form .container .btn {
+    width: 100%;
+    padding: 10px 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.register .container .register-form .container form .container .btn button {
+    background-color: #3bd858;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 0px;
+    margin-bottom: 5px;
+    color: whitesmoke;
+    
+}
+
+.register .container .register-form .container form .container .btn .sign-up a {
+    color: #3bd858;
+
+}
+
+.register .container .register-form .container form .container .btn .login a {
+    color: #3bd858;
+
+}
+
+.register .container .register-form .container form .container .btn .login {
+    display: flex;
+    justify-content: center;
+
+}
+
+
+
+
+  .red {
+    border: 2px solid red;
+}
+
+.green {
+    border: 2px solid green;
+}
+
+.black {
+    border: 1px solid black;
+}
+
+
+.yellow {
+    border: 2px solid yellow;
+}

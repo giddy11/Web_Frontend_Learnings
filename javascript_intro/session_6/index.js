@@ -17,14 +17,6 @@
  * 
  */
 
-// const { JSDOM } = require("jsdom");
-
-// Simulate a DOM
-// const dom = new JSDOM(`<!DOCTYPE html><div id="heritage">Hello, Heritage!</div>`);
-// const dom = new JSDOM();
-
-// const document = dom.window.document;
-
 let tag = document.getElementById("heritage")
 // console.log(tag)
 
