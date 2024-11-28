@@ -12,16 +12,28 @@
     />
   </head>
   <body>
+    <div id="modal" class="modal">
+      <!-- "Please wait" message -->
+      <div id="Please" class="please">Please wait...........</div>
+  
+      <!-- Success message -->
+      <div class="success">
+          <h2>Success</h2>
+          <p>You have logged in</p>
+          <button class="btn">OK</button>
+      </div>
+  </div>
+
     <div class="register">
       <div class="container">
         <div class="img green">
-          <img src="../assets/images/register.jpg" alt="" />
+          <img src="./register.jpg" alt="" />
         </div>
 
         <div class="register-form redx">
           <div class="container">
             <h3>Basic Information</h3>
-            <form action="" class="redx">
+            <form id="form" action="" class="redx">
               <div class="container">
                 <div class="fill">
                   <label for="name">Full Name</label>
@@ -62,10 +74,11 @@
                     placeholder="repeat password"
                   />
                 </div>
+                <div id="message"></div>
 
                 <div class="btn">
-                  <button id="btn">Sign Up</button>
-                  <div class="login">
+                  <button id="register">Sign Up</button>
+                  <div class="sign-up">
                     <span>Already on Vestra?</span>
                     <span>
                       <a href="#">Login</a>
@@ -82,5 +95,6 @@
     </div>
 
     <script src="index.js"></script>
+    <script src="register.js"></script>
   </body>
 </html>
